@@ -116,7 +116,9 @@ const deleteListItem = async (item: ISpecialty) => {
         item-value="id"
         @update:options="handleDataTableUpdate"
       >
-        <template #[`item.scheduleDuration`]="{ item }"> {{ item.scheduleDuration }} min </template>
+        <template #[`item.scheduleDuration`]="{ item }">
+          {{ item.scheduleDuration }} mininutos
+        </template>
         <template #[`item.actions`]="{ item }">
           <v-tooltip text="Deletar especialidade" location="left">
             <template #activator="{ props }">

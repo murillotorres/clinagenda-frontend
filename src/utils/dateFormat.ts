@@ -64,3 +64,4 @@ export const dateFormat = (
 
   return datefnsFormat(dateToFormat, dateFormat)
 }
+
